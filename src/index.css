@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Jacques+Francois+Shadow&display=swap');
+
+:root {
+
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  font-family: "Castoro Titling", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: rgba(7, 12, 0, 0.87)
+}
+
+/* body {
+  margin: 0;
+} */
