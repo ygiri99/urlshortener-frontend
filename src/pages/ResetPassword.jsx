@@ -17,7 +17,7 @@ export default function ResetPassword() {
         const data = { userId, token, newPassword };
 
         try {
-            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_SERVER_URL}/reset-password`, data, { origin: 'http://localhost:8000/reset-password' });
+            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_SERVER_URL}/reset-password`, data, { origin: import.meta.env.VITE_REACT_APP_SERVER_URL + '/reset-password' });
             if (response) {
                 window.alert(`Resetted successfully`);
                 setResetQuery('');

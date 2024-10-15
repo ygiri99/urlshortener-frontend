@@ -12,7 +12,7 @@ export default function Signout() {
             try {
                 //Removing authToken to signOut
                 localStorage.removeItem('Token');
-                const response = await axios.get(`${import.meta.env.REACT_APP_BASE_URL}/signout`);
+                const response = await axios.get(`${import.meta.env.VITE_REACT_APP_SERVER_URL}/signout`);
                 setMessage(response.data.message);
                 navigate('/');
 
