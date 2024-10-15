@@ -11,13 +11,12 @@ export default function Signin() {
     const navigate = useNavigate();
 
     //API for signin
-    // axios.defaults.withCredentials = true;
     const signInFun = async () => {
         setErr('');
         try {
             const response = await axios.post(`${import.meta.env.VITE_REACT_APP_SERVER_URL}/signin`,
                 { email, password }
-                , { origin: 'http://localhost:8000', credentials: true }
+                , { origin: 'https://urlshortener-backend-tdjq.onrender.com', credentials: true }
             );
             if (response) {
                 alert(response.data.message);
